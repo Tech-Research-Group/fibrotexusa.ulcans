@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.CriticalConsiderations.CriticalConsiderationsPage"
+             NavigationPage.HasBackButton="False"
+             Title="CRITICAL CONSIDERATIONS">
+
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+
+                <Label Text="INTRODUCTION" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout>
+                    <Label Text="Fibrotex USA has decades of experience developing, training, and using a variety of signature management systems and techniques."
+                           TextColor="Black" />
+                    <Label Text="From this experience, multiple subject matter experts have distilled the most relevant information into this guide, which is intended as a supplement to the ULCANS Increment I Technical Manual."
+                           TextColor="Black" />
+                    <Label Text="The information contained in this section is based on frequently asked questions and commonly observed 'mistakes' in training and in the field."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="Button_Home_240x240" HeightRequest="40" HorizontalOptions="StartAndExpand" Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="1 / 5" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

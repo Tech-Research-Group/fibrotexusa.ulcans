@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="GENERAL INFORMATION"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Padding="0, 10, 0, 0" 
+                       TextColor="Black" />
+
+                <Label Text="ULCANS is a 2D reversible, all-weather, multi-spectral, modular camouflage system that provides visual, near IR, shortwave IR, thermal, and radar signature concealment for stationary vehicles, weapons systems, tactical operation centers, personnel, and other tactical equipment." 
+                       Padding="0, 10, 0, 0"
+                       TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Label Text="ULCANS is designed for rapid deployment and recovery and is operator repairable and maintainable." 
+                        TextColor="Black"
+                        Padding="0, 10, 0, 0"/>
+
+                    <Image Source="ED_truck_camo"
+                        HeightRequest="150"
+                        HorizontalOptions="End"
+                        Margin="0, 0, 0, 0"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"  BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="Button_Home_240x240" HeightRequest="40" HorizontalOptions="StartAndExpand"  
+                             Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="1 / 8" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                             Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage2"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="SYSTEM TYPE - 1" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0"
+                   TextColor="Black" />
+
+                <Label Text="ULCANS has two system types: Type I, General Purpose (R/S), and Type II, Communications (R/T)."
+                   TextColor="Black"
+                   Padding="0, 5, 0, 0"/>
+
+                <Label Text="TYPE I" FontAttributes="Bold" FontSize="Medium" Padding="0, 5, 0, 0"
+                   TextColor="Black" />
+
+                <Label Text="Type I (camouflage edge band) is radar scattering and used for concealing non-radar ground equipment and tactical systems."
+                   TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="ED_Type_I_IDTag" WidthRequest="300"/>
+                </StackLayout>
+
+                <Label Text="IDENTIFICATION TAG" HorizontalTextAlignment="Center" HorizontalOptions="Center" TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back"
+                                HeightRequest="40"
+                                HorizontalOptions="StartAndExpand"
+                                Margin="0, 5"
+                                Clicked="OnBackBtnClicked"/>
+
+
+                    <Label Text="2 / 9" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back"
+                                Rotation="180"
+                                HeightRequest="40"
+                                HorizontalOptions="EndAndExpand"
+                                Margin="0, 5"
+                                Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

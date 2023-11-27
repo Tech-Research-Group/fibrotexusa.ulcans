@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fibrotexusa.ulcans.Views.MenuPage"
+             Title="MENU"
+             IconImageSource="Button_Burger_24x21">
+    <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="#DCDCDC">
+        <ListView x:Name="ListViewMenu" HasUnevenRows="True" BackgroundColor="#DCDCDC">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="25"/>
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding ImageSource}" Grid.Column="0" HeightRequest="25"/>
+                            <Label Text="{Binding Title}" Grid.Column="1" FontSize="14" TextColor="Black"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Image Source="fusa_logo" WidthRequest="200" Margin="0, 5, 0, 5"/>
+    </StackLayout>
+</ContentPage>

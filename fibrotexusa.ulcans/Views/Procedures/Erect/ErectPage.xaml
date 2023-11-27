@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Procedures.Erect.ErectPage"
+             NavigationPage.HasBackButton="False"
+             Title="ERECT">
+    <ContentPage.Content>
+        <StackLayout Padding="15, 0">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="NET ASSEMBLY SELECTION" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black"/>
+
+                    <Label TextColor="Black">
+                        <Label.FormattedText Padding="0, 0, 5, 10" HorizontalTextAlignment="Start">
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Screens should be assembled prior to fielding. This allows quick deployment of ULCANS in a hostile environment. See "/>
+                                    <Span Text="Configuration" TextColor="Blue" x:Name="configBtn"/>
+                                    <Span Text=" for more information on screen selection."/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Image Source="Config_typical_table03" WidthRequest="350"/>
+
+                    <Label TextColor="Black">
+                        <Label.FormattedText Padding="0, 5, 5, 0" HorizontalTextAlignment="Start">
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Before assembling screens, open and inventory all contents. Ensure all screens are of the same type and class. See " 
+                                          TextColor="Black"/>
+                                    <Span Text="Equipment Description" TextColor="Blue" x:Name="equipDescBtn"/>
+                                    <Span Text=" for more information. This setup procedure uses the configuration shown."/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Image Source="Config_dimensions03" WidthRequest="250" Margin="5, 0, 0, 0"/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand" Margin="0, 5"
+                             Clicked="OnBackBtnClicked"/>
+
+                <Label Text="1 / 6" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+
+                <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="0, 5"
+                             Clicked="OnNextBtnClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

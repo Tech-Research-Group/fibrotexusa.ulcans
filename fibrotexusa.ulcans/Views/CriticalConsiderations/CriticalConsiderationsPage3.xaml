@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.CriticalConsiderations.CriticalConsiderationsPage3"
+             NavigationPage.HasBackButton="False"
+             Title="CRITICAL CONSIDERATIONS">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="DEPLOYMENT" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="It is recommended to size up whenever calculating the appropriate configuration for net assembly based on the size of the asset to be concealed. This allows for more mobility under the nets without compromising their concealment capabilities."
+                           TextColor="Black" Padding="0, 10, 0, 0"/>
+                    <Image Source="Deploy_TruckNetEntry" WidthRequest="300"/>
+                </StackLayout>
+
+                <Label Text="POSITIONING THE POLES" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Place the bottom of the poles as close as possible to the asset to be concealed, with the shape disruptor end pointing away."
+                                    TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Arrange the poles to allow a wide enough space between for vehicle(s) to depart without needing to reposition poles."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Place corner poles at 45-degree angles from each corner of the asset to be concealed. Place additional poles at 90 degrees pointing away from the asset. The GTA illustrates this configuration clearly."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <Label Text="POSITIONING THE ROLLED NET CONFIGURATION" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="When placing the rolled net configuration on top of the asset to be concealed, take into account variations in the height of the asset. If one side or area is taller than another, the folded/rolled net should be placed closer to the high point to ensure all sides are covered when the net is unfolded/unrolled. If the asset is of even height, without a tall point, the folded/rolled net should be placed in the center."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand" Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="3 / 5" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

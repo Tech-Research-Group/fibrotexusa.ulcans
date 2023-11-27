@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:video="clr-namespace:FormsVideoLibrary"
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Procedures.Erect.ErectPage3"
+             Title="ERECT">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="FOLDING NET ASSEMBLY"
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       Padding="0, 10, 0, 0"
+                       TextColor="Black" />
+
+                <video:VideoPlayer AutoPlay="True" HeightRequest="250" AreTransportControlsEnabled="True"
+                               CompressedLayout.IsHeadless="False">
+                    <video:VideoPlayer.Source>
+                        <video:ResourceVideoSource>
+                            <video:ResourceVideoSource.Path>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Videos/FoldNetAssembly.mp4" />
+                                    <On Platform="Android" Value="FoldNetAssembly.mp4"/>
+                                </OnPlatform>
+                            </video:ResourceVideoSource.Path>
+                        </video:ResourceVideoSource>
+                    </video:VideoPlayer.Source>
+                </video:VideoPlayer>
+
+                <StackLayout Orientation="Horizontal" Grid.Column="0" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back"
+                             HeightRequest="40"
+                             HorizontalOptions="StartAndExpand"
+                             Margin="0, 5"
+                             Clicked="OnBackBtnClicked">
+                    </ImageButton>
+
+                    <Label Text="3 / 6" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"></Label>
+
+                    <ImageButton Source="arrow_back"
+                             Rotation="180"
+                             HeightRequest="40"
+                             HorizontalOptions="EndAndExpand"
+                             Margin="0, 5"
+                             Clicked="OnNextBtnClicked">
+                    </ImageButton>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

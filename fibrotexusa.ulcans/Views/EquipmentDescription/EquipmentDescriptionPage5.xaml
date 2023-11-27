@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage5"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="SCREEN SYSTEM" FontAttributes="Bold" FontSize="Medium"
+                   Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <Label Text="A modular camouflage screen system includes the following:"
+                   TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Hexagon screen" TextColor="Black"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Rhombic screen" TextColor="Black"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Screen carrying case" TextColor="Black"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Repair kit" TextColor="Black"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Technical manual" TextColor="Black"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Graphic training aid" TextColor="Black"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                        <Image Source="ED_screen_system" WidthRequest="250"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <Label Text="An identification tag on the carrying case identifies the type and class of the screen system. The case color corresponds to the system class: Class 1, Woodland (green); Class 2, Desert/Urban (tan); Class 3, Snow/Alpine (gray)."
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand"
+                    TextColor="Black"
+                    Padding="0, 5, 0, 0"/>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back"
+                                HeightRequest="40"
+                                HorizontalOptions="StartAndExpand"
+                                Margin="0, 5"
+                                Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="5 / 9" 
+                        VerticalOptions="Center" 
+                        FontAttributes="Bold" 
+                        TextColor="Black" />
+
+                    <ImageButton Source="arrow_back"
+                                Rotation="180"
+                                HeightRequest="40"
+                                HorizontalOptions="EndAndExpand"
+                                Margin="0, 5"
+                                Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+
+    </ContentPage.Content>
+</ContentPage>

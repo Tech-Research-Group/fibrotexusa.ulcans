@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Configuration.TypicalConfigPage"
+             NavigationPage.HasBackButton="False"
+             Title="TYPICAL CONFIGURATIONS">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 10, 15, 0">
+                <Grid>
+                    <BoxView BackgroundColor="Black" />
+                    <Grid BackgroundColor="GhostWhite" Margin="3" RowSpacing="0" ColumnSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+
+                        </Grid.RowDefinitions>
+
+                        <!--Table Head-->
+                        <Label Text="Vehicle" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" Padding="10, 5" FontAttributes="Bold"/>
+                        <Label Text="Name" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                        <Label Text="Hexagon" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                        <Label Text="Rhombus" Grid.Column="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                        <Label Text="Image" Grid.Column="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                        <Label Text="Configuration Name" Grid.Column="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold" Padding="0, 5, 0, 5"/>
+
+                        <!--Row 1-->
+                        <Image Source="JLTV" WidthRequest="20" Grid.Column="0" Grid.Row="1"/>
+                        <Label Text="JLTV" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="1" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i1B" WidthRequest="20" Grid.Column="4" Grid.Row="1"/>
+                        <Label Text="1B" Grid.Column="5" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 2-->
+                        <Image Source="MRAP" WidthRequest="20" Grid.Column="0" Grid.Row="2"/>
+                        <Label Text="MRAP/MATV" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="2" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="3" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i2" WidthRequest="20" Grid.Column="4" Grid.Row="2"/>
+                        <Label Text="2" Grid.Column="5" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 3-->
+                        <Image Source="stryker" WidthRequest="20" Grid.Column="0" Grid.Row="3"/>
+                        <Label Text="Stryker" Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="2" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="3" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i2" WidthRequest="20" Grid.Column="4" Grid.Row="3"/>
+                        <Label Text="2" Grid.Column="5" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 4-->
+                        <Image Source="Bradley" WidthRequest="20" Grid.Column="0" Grid.Row="4"/>
+                        <Label Text="Bradley" Grid.Column="1" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="2" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="3" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i2" WidthRequest="20" Grid.Column="4" Grid.Row="4"/>
+                        <Label Text="2" Grid.Column="5" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 5-->
+                        <Image Source="Abrams" WidthRequest="20" Grid.Column="0" Grid.Row="5"/>
+                        <Label Text="Abrams" Grid.Column="1" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="3" Grid.Column="2" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="3" Grid.Column="3" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i3" WidthRequest="20" Grid.Column="4" Grid.Row="5"/>
+                        <Label Text="3" Grid.Column="5" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 6-->
+                        <Image Source="Howitzer105" WidthRequest="20" Grid.Column="0" Grid.Row="6"/>
+                        <Label Text="Howitzer 105" Grid.Column="1" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="1" Grid.Column="2" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="3" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i1B" WidthRequest="20" Grid.Column="4" Grid.Row="6"/>
+                        <Label Text="1B" Grid.Column="5" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 7-->
+                        <Image Source="Howitzer155" WidthRequest="20" Grid.Column="0" Grid.Row="7"/>
+                        <Label Text="Howitzer 155" Grid.Column="1" Grid.Row="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="2" Grid.Row="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="2" Grid.Column="3" Grid.Row="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i2" WidthRequest="20" Grid.Column="4" Grid.Row="7"/>
+                        <Label Text="2" Grid.Column="5" Grid.Row="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 8-->
+                        <Image Source="Paladin2" WidthRequest="20" Grid.Column="0" Grid.Row="8"/>
+                        <Label Text="M109 Paladin" Grid.Column="1" Grid.Row="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="3" Grid.Column="2" Grid.Row="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="3" Grid.Column="3" Grid.Row="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i3" WidthRequest="20" Grid.Column="4" Grid.Row="8"/>
+                        <Label Text="3" Grid.Column="5" Grid.Row="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 9-->
+                        <Image Source="M1087" WidthRequest="20" Grid.Column="0" Grid.Row="9"/>
+                        <Label Text="M1087 Expandable Van" Grid.Column="1" Grid.Row="9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="4" Grid.Column="2" Grid.Row="9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="4" Grid.Column="3" Grid.Row="9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i4" WidthRequest="20" Grid.Column="4" Grid.Row="9"/>
+                        <Label Text="4" Grid.Column="5" Grid.Row="9" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 10-->
+                        <Image Source="HMMET" WidthRequest="20" Grid.Column="0" Grid.Row="10"/>
+                        <Label Text="HEMTT" Grid.Column="1" Grid.Row="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="4" Grid.Column="2" Grid.Row="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="4" Grid.Column="3" Grid.Row="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i4" WidthRequest="20" Grid.Column="4" Grid.Row="10"/>
+                        <Label Text="4" Grid.Column="5" Grid.Row="10" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                        <!--Row 11-->
+                        <Image Source="Tent" WidthRequest="20" Grid.Column="0" Grid.Row="11"/>
+                        <Label Text="Billeting Tent/GP Medium" Grid.Column="1" Grid.Row="11" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="4" Grid.Column="2" Grid.Row="11" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="4" Grid.Column="3" Grid.Row="11" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        <Image Source="i4" WidthRequest="20" Grid.Column="4" Grid.Row="11"/>
+                        <Label Text="4" Grid.Column="5" Grid.Row="11" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                    </Grid>
+                </Grid>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45"
+                             VerticalOptions="EndAndExpand">
+                    <ImageButton Source="Button_Home_240x240" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="" VerticalOptions="Center" />
+
+                    <ImageButton Source="Button_Calculator_120x120"
+                            HeightRequest="40"
+                            HorizontalOptions="EndAndExpand"
+                            Margin="0, 5"
+                            Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

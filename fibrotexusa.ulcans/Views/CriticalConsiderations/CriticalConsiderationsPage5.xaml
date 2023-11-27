@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.CriticalConsiderations.CriticalConsiderationsPage5"
+             NavigationPage.HasBackButton="False"
+             Title="CRITICAL CONSIDERATIONS">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="GENERAL" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Camouflage is compromised of two basic principles: shape disruption and 'noise.'"
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label TextColor="Black">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Shape: " FontAttributes="Bold"/>
+                                    <Span Text="There are no straight lines in nature (apart from urban environments, which are not natural). To better resemble the environment, it is important to create natural, non-geometric shapes or outlines with the systems. This component of camouflage is created by the end user."/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label TextColor="Black">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Noise: " FontAttributes="Bold"/>
+                                    <Span Text="The goal is to mimic the noise created by the environment within the different bandwidths detected by sensors. Noise is created by the manufacturer."/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="It is recommended to use an 'outside spotter' to guide system deployment and ensure the system merges with the environment and does not create unnatural shapes or angles that may contrast with the background."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Deploy poles so that the wide side of the shape disruptor is on the seam to reinforce net interconnection and direct net tension such that it does not create gaps in the quick connection seams."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <Image Source="ulcans_overhead_view_brown"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="If you anticipate needing to open the net connections (e.g. to take out a barrel), begin quick connection process at the edges of the system working towards the center. This will allow them to disconnect from the center to create a small opening rather than needing to undo an entire side, compromising the system as a whole."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="It is possible to use the system cases to cover sharp edges of the platform like concertina fences to reduce the risk of ripping the nets." TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Inversion is the most dangerous time frame, both day-to-night and night-to-day, due to larger temperature differences between the air, ground, foliage, rocks, and other environmental components. Inversion can take up to three hours, depending on global position and time of year." TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="When operating a vehicle under a net, heat will be generated that may compromise the system. It is important to note that thermal devices detect particles, not actual thermal energy. There are two strategies for mitigating this risk:"
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                    <Label Text="1. " TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Create an exhaust extension to force the exhaust underneathe/outside the net."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                    <Label Text="2. " TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                    <Label Text="Create openings in the net roof to function as a chimney to allow the particles to escape."
+                           TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand" Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="5 / 5" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="Button_Home_240x240" HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+

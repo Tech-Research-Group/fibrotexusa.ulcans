@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Procedures.ProceduresPage"
+             NavigationPage.HasBackButton="False"
+             Title="PROCEDURES">
+    <ContentPage.Content>
+        <StackLayout Padding="15, 60, 15, 0">
+
+            <!-- View using Grid -->
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Row 1 -->
+                <StackLayout Grid.Row="0" Grid.Column="0">
+                    <ImageButton Source="Button_SetUp_240x240" HeightRequest="100" Clicked="OnErectBtn_Clicked" HorizontalOptions="CenterAndExpand" Aspect="AspectFit"/>
+                    <Label Text="Erect" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Large"/>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1">
+                    <ImageButton Source="Button_TearDown_240x240" HeightRequest="100" Clicked="OnStrikeBtn_Clicked" HorizontalOptions="CenterAndExpand" Aspect="AspectFill"/>
+                    <Label Text="Strike" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Large"/>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="50" VerticalOptions="EndAndExpand">
+                <ImageButton Source="Button_Home_240x240" HeightRequest="45" HorizontalOptions="StartAndExpand"
+                             Margin="0, 5" Clicked="OnBackBtnClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

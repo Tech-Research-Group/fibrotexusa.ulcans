@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>portable</DebugType>
+        <Optimize>false</Optimize>
+        <DocumentationFile>
+        </DocumentationFile>
+        <DebugSymbols>true</DebugSymbols>
+        <NoWarn></NoWarn>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+      <NoStdLib>false</NoStdLib>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+        <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+        <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Views\Configuration\" />
+        <Folder Include="Views\CriticalConsiderations\" />
+        <Folder Include="Views\EquipmentDescription\" />
+        <Folder Include="Views\Maintenance\" />
+        <Folder Include="Views\Procedures\" />
+        <Folder Include="Views\Procedures\Erect\" />
+        <Folder Include="Views\Procedures\Strike\" />
+        <Folder Include="Views\References\" />
+        <Folder Include="ViewModels\" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Update="Views\NewItemPage.xaml">
+            <LogicalName>Views.NewItemPage.xaml</LogicalName>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="ViewModels\AboutViewModel.cs" />
+        <Compile Remove="ViewModels\ItemDetailViewModel.cs" />
+        <Compile Remove="ViewModels\ItemsViewModel.cs" />
+        <Compile Remove="Utilities\ReadWriteCsv.cs" />
+        <Compile Remove="Controls\EnumPicker.cs" />
+        <Compile Remove="Models\Platform.cs" />
+        <Compile Remove="ViewModels\BaseViewModel.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Update="Views\HomePage.xaml.cs">
+            <DependentUpon>HomePage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\MainPage.xaml.cs">
+            <DependentUpon>MainPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\MenuPage.xaml.cs">
+            <DependentUpon>MenuPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\HomePage.xaml.cs">
+            <DependentUpon>HomePage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Configuration\CalculatorPage.xaml.cs">
+            <DependentUpon>CalculatorPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Configuration\TypicalConfigPage.xaml.cs">
+            <DependentUpon>TypicalConfigPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Configuration\ConfigListPage.xaml.cs">
+            <DependentUpon>ConfigListPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CriticalConsiderations\CriticalConsiderationsPage.xaml.cs">
+            <DependentUpon>CriticalConsiderationsPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CriticalConsiderations\CriticalConsiderationsPage2.xaml.cs">
+            <DependentUpon>CriticalConsiderationsPage2.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CriticalConsiderations\CriticalConsiderationsPage3.xaml.cs">
+            <DependentUpon>CriticalConsiderationsPage3.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CriticalConsiderations\CriticalConsiderationsPage4.xaml.cs">
+            <DependentUpon>CriticalConsiderationsPage4.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\CriticalConsiderations\CriticalConsiderationsPage5.xaml.cs">
+            <DependentUpon>CriticalConsiderationsPage5.xaml</DependentUpon>
+        </Compile>        
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage2.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage2.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage3.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage3.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage4.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage4.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage5.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage5.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage6.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage6.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage7.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage7.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage8.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage8.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\EquipmentDescription\EquipmentDescriptionPage9.xaml.cs">
+            <DependentUpon>EquipmentDescriptionPage9.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Maintenance\MaintenancePage.xaml.cs">
+            <DependentUpon>MaintenancePage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Maintenance\MaintenancePage2.xaml.cs">
+            <DependentUpon>MaintenancePage2.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Maintenance\MaintenancePage3.xaml.cs">
+            <DependentUpon>MaintenancePage3.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Maintenance\MaintenancePage4.xaml.cs">
+            <DependentUpon>MaintenancePage4.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\ProceduresPage.xaml.cs">
+          <DependentUpon>ProceduresPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Erect\BecketLacingPage.xaml.cs">
+            <DependentUpon>BecketLacingPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Erect\ErectPage.xaml.cs">
+            <DependentUpon>ErectPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Erect\ErectPage3.xaml.cs">
+            <DependentUpon>ErectPage3.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Erect\ErectPage4.xaml.cs">
+            <DependentUpon>ErectPage4.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Erect\ErectPage5.xaml.cs">
+            <DependentUpon>ErectPage5.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Erect\ErectPage6.xaml.cs">
+            <DependentUpon>ErectPage6.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Strike\StrikePage.xaml.cs">
+            <DependentUpon>StrikePage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Strike\StrikePage2.xaml.cs">
+            <DependentUpon>StrikePage2.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Strike\StrikePage3.xaml.cs">
+            <DependentUpon>StrikePage3.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Strike\StrikePage4.xaml.cs">
+            <DependentUpon>StrikePage4.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\Procedures\Strike\StrikePage5.xaml.cs">
+            <DependentUpon>StrikePage5.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\References\ReferencesPage.xaml.cs">
+            <DependentUpon>ReferencesPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\References\ReferencesPage2.xaml.cs">
+            <DependentUpon>ReferencesPage2.xaml</DependentUpon>
+        </Compile>
+        <Compile Update="Views\References\ReferencesPage3.xaml.cs">
+            <DependentUpon>ReferencesPage3.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+</Project>

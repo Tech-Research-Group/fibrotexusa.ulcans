@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage8"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="SUPPORT SYSTEM" FontAttributes="Bold" FontSize="Medium"
+                       Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <Label Text="The support system includes components that create space between the camouflage screen and equipment being concealed in order to break up the visible outline of the equipment."
+                       TextColor="Black" Padding="0, 5, 0, 0"/>
+
+                <Label Text="The support system includes the following:" Padding="0, 5, 0, 0" TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+
+                        <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="10" VerticalTextAlignment="Center"/>
+                            <Label Text="20 ea. Tent pins (1)" TextColor="Black" FontSize="16"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="10"  VerticalTextAlignment="Center"/>
+                            <Label Text="5 ea. 13.77 ft (4.2 m) Telescopic support poles (2)" TextColor="Black" FontSize="16"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="10" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Support system carrying bag (3)" TextColor="Black" FontSize="16"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="10" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Spanner wrench (4)" TextColor="Black" FontSize="16"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="10" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Tent pin carry case (5)" TextColor="Black" FontSize="16"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="15, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="10" VerticalTextAlignment="Center"/>
+                            <Label Text="1 ea. Hammer (6)" TextColor="Black" FontSize="16"/>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                        <Image Source="SupportSystemBag_CO" WidthRequest="250"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="8 / 9" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                                 Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

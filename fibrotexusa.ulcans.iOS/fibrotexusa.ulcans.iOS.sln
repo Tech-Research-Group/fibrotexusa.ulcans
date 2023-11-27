@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fibrotexusa.ulcans.iOS", "fibrotexusa.ulcans.iOS.csproj", "{ECDE6E79-0380-4B57-A8CE-7B5EAA6AAC75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECDE6E79-0380-4B57-A8CE-7B5EAA6AAC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDE6E79-0380-4B57-A8CE-7B5EAA6AAC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDE6E79-0380-4B57-A8CE-7B5EAA6AAC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDE6E79-0380-4B57-A8CE-7B5EAA6AAC75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75B4F761-143F-44C7-AA31-2C175CFE23B1}
+	EndGlobalSection
+EndGlobal

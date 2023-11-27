@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.CriticalConsiderations.CriticalConsiderationsPage2"
+             NavigationPage.HasBackButton="False"
+             Title="CRITICAL CONSIDERATIONS">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <StackLayout>
+                    <Label Text="LOCATION" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black" />
+
+                    <Label Text="It is best practice to minimize the area of the side facing the threat when positioning/orienting the asset and system."  TextColor="Black" />
+
+                    <Label Text="It is beneficial to deploy the system behind at least the first tree line, with concealment improving with increased foliage between the asset and the threat." TextColor="Black" />
+
+                    <Label Text="To decrease detectability, avoid disturbing the environment (foliage, snow, sand, etc.) around and especially in front of the system. Tire tracks, footprints, and other evidence of activity can affect the multispectral reflective properties of the environment around the system." TextColor="Black" />
+
+                    <Image Source="embedded_system" HorizontalOptions="Center" HeightRequest="250" Margin="0, 10, 0, 10"/>
+
+                    <Label Text="When determining which pattern or side of the system to deploy, consider the effect of shadows on the system. It is recommended to select the lighter side when in doubt, as shadows from the surroundings will darken the pattern when deployed." TextColor="Black" />
+
+                    <Label Text="It is best to embed the system into the environment as much as possible. To avoid solar loading and ensure the system reflects the properties of the immediate environment rather than the sky, position the system to be naturally shaded." TextColor="Black" />
+
+                    <Label Text="Naturally, part of the system will reflect the sky. It is important to minimize the area which is at an angle to reflect the sky towards the threat. Angle the system so that vegetation is reflected as much as possible." TextColor="Black" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand" Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="2 / 5" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

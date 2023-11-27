@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage7"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="REPAIR KIT" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" 
+                       TextColor="Black" />
+
+                <Label Text="A repair kit is furnished to make field repairs of the ULCANS screens and return the system to a serviceable condition. The repair material in the kit is the same color class as the screen system. The repair kit is stored in a pocket inside the screen system bag."
+                       VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" TextColor="Black"
+                       Padding="0, 10, 0, 0"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                        <Label Text="A repair kit is provided to make field repairs and includes the following:"
+                               Padding="0, 5, 0, 0" TextColor="Black" />
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="Repair kit bag" TextColor="Black" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="300 ea. Cable ties" TextColor="Black" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="20, 0, 0, 0">
+                            <Label Text="&#9632;" TextColor="Black" FontSize="Micro" VerticalTextAlignment="Center"/>
+                            <Label Text="25 ft² Screen repair material" TextColor="Black" />
+                        </StackLayout>
+
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="EndAndExpand">
+                        <Image Source="ED_repair_kit" WidthRequest="250"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45"
+                             VerticalOptions="EndAndExpand">
+
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="7 / 9" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40"
+                                 HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>
+

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Procedures.Strike.StrikePage2"
+             NavigationPage.HasBackButton="False"
+             Title="STRIKE">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="RETRIEVAL - 2" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" 
+                       TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout WidthRequest="780">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="1. " TextColor="Black"/>
+                            <Label Text="Remove all tent pins (1) securing net assembly." TextColor="Black"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="2. " TextColor="Black"/>
+                            <Label Text="Wipe mud/dirt from tent pins and telescopic poles (2)." TextColor="Black"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="3. " TextColor="Black"/>
+                            <Label Text="Stow telescopic poles in support system carrying bag (3)." TextColor="Black"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="4. " TextColor="Black"/>
+                            <Label Text="Attach spanner wrench (4) to tent pin carrying case (5)." TextColor="Black"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="5. " TextColor="Black"/>
+                            <Label Text="Place tent pins in carrying case. Place case in support system carrying bag." TextColor="Black"/>
+                            <!--<Label Text="6. Place hammer (6) in support system bag." TextColor="Black"/>-->
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="6. " TextColor="Black"/>
+                            <Label Text="Spread net assembly over level ground and remove leaves, twigs, dirt, or foreign objects from screens." TextColor="Black"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="7. " TextColor="Black"/>
+                            <Label TextColor="Black">
+                                <Label.FormattedText Padding="0, 5, 5, 0" HorizontalTextAlignment="Start">
+                                    <FormattedString>
+                                        <FormattedString.Spans>
+                                            <Span Text="Repair screens as necessary. See " TextColor="Black"/>
+                                            <Span Text="Maintenance" TextColor="Blue" x:Name="maintenanceBtn"/>
+                                            <Span Text=" for additional information." TextColor="Black"/>
+                                        </FormattedString.Spans>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Padding="15, 0, 0, 0">
+                        <Image Source="SupportSystemBag_CO" WidthRequest="300"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back"
+                                HeightRequest="40"
+                                HorizontalOptions="StartAndExpand"
+                                Margin="0, 5"
+                                Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="2 / 5" 
+                        VerticalOptions="Center" 
+                        FontAttributes="Bold"
+                        TextColor="Black" />
+
+                    <ImageButton Source="arrow_back"
+                                Rotation="180"
+                                HeightRequest="40"
+                                HorizontalOptions="EndAndExpand"
+                                Margin="0, 5"
+                                Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

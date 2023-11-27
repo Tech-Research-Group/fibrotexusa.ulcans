@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             x:Class="fibrotexusa.ulcans.Views.HomePage"
+             NavigationPage.HasBackButton="False"
+             Title="HOME">
+        <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding LoadItemsCommand}">
+        <!-- View using Grid -->
+        <Grid ColumnSpacing="10" Margin="0, 35">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Row 1 -->
+            <StackLayout Grid.Row="0" Grid.Column="0">
+                <ImageButton Source="Button_TypicalConfig_120x120" HeightRequest="75" Clicked="OnTypicalConfigBtn_Clicked" HorizontalOptions="Center"/>
+                <Label Text="Typical" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+                <Label Text="Configurations" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="1">
+                <ImageButton Source="Button_Calculator_120x120" HeightRequest="75" Clicked="OnCalculatorBtn_Clicked" HorizontalOptions="Center"/>
+                <Label Text="Configuration" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+                <Label Text="Calculator" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="2">
+                <ImageButton Source="Button_Configuration_240x240" HeightRequest="75" Clicked="OnAdvConfigurationBtn_Clicked" HorizontalOptions="Center"/>
+                <Label Text="Configuration" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+                <Label Text="List" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="3">
+                <ImageButton Source="Button_CamoBasics_240x240" HeightRequest="75" Clicked="OnCamoBasicsBtnClicked" HorizontalOptions="Center"/>
+                <Label Text="Critical" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+                <Label Text="Considerations" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+
+            <!-- Row 2 -->
+            <StackLayout Grid.Row="1" Grid.Column="0">
+                <ImageButton Source="Button_EqDesc_240x240" HeightRequest="75" Clicked="OnEquipmentDescBtnClicked" HorizontalOptions="Center"/>
+                <Label Text="Equipment" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+                <Label Text="Description" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <ImageButton Source="Button_SetUp_240x240" HeightRequest="75" Clicked="OnProceduresBtn_Clicked" HorizontalOptions="Center"/>
+                <Label Text="Procedures" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="2">
+                <ImageButton Source="Button_References_240x240" HeightRequest="75" Clicked="OnMaintenanceBtnClicked" HorizontalOptions="Center"/>
+                <Label Text="Maintenance" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="3">
+                <ImageButton Source="Button_References_240x240" HeightRequest="75" Clicked="OnReferencesBtnClicked" HorizontalOptions="Center"/>
+                <Label Text="References" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Caption"/>
+            </StackLayout>
+        </Grid>
+
+    </RefreshView>
+</ContentPage>

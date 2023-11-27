@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:video="clr-namespace:FormsVideoLibrary"
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Procedures.Erect.ErectPage6"
+             NavigationPage.HasBackButton="False"
+             Title="ERECT">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="DEPLOYMENT - 3" FontAttributes="Bold" FontSize="Medium"
+                       Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame BorderColor="Black" BackgroundColor="White">
+                        <Label TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="NOTE: " TextColor="Black" FontAttributes="Bold"/>
+                                        <Span Text="Place stakes in ground after net is deployed over equipment that needs to be concealed. Once stakes are deployed, begin extending support poles, starting at tallest point of asset (usually the center) and deploy first poles. Work your way to lowest point of asset on both sides to maintain some level of symmetry."
+                                          TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </StackLayout>
+
+                <video:VideoPlayer AutoPlay="True" HeightRequest="250" AreTransportControlsEnabled="True"
+                                   CompressedLayout.IsHeadless="False">
+                    <video:VideoPlayer.Source>
+                        <video:ResourceVideoSource>
+                            <video:ResourceVideoSource.Path>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Videos/TruckCover.mp4" />
+                                    <On Platform="Android" Value="TruckCover.mp4"/>
+                                </OnPlatform>
+                            </video:ResourceVideoSource.Path>
+                        </video:ResourceVideoSource>
+                    </video:VideoPlayer.Source>
+                </video:VideoPlayer>
+
+                <StackLayout Orientation="Horizontal"  BackgroundColor="Transparent" HeightRequest="45"
+                             VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="6 / 6" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+
+                    <ImageButton Source="Button_Home_240x240" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                                 Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

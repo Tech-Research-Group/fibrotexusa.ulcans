@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Maintenance.MaintenancePage3"
+             NavigationPage.HasBackButton="False"
+             Title="MAINTENANCE">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="PREVENTIVE MAINTENANCE CHECKS AND SERVICES" FontAttributes="Bold"
+                       FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black"/>
+
+                <Label Text="Preventive Maintenance Checks and Services (PMCS) are performed to keep ULCANS in operating condition. The checks are used to find, correct, or report problems. PMCS is done every day ULCANS is deployed using the PMCS tables found in the Technical Manual (TM) or by referring to the table below."
+                       TextColor="Black"/>
+
+                <Image Source="Maintenance_PMCS_Table"/>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45"
+                             VerticalOptions="EndAndExpand">
+
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="3 / 4" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" HeightRequest="40" Rotation="180"
+                                 HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage6"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="HEXAGON AND RHOMBIC SCREEN" FontAttributes="Bold" FontSize="Medium"
+                       Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <Label Text="Each screen has a quick connection system on the outer edges used to connect multiple screens together. Identification tags (2) inform whether the screen is Type I, General Purpose (R/S), or Type II, Communications (R/T). A camouflage edge band (1) indicates a Type I system and a solid color edge band (1) indicates Type II." 
+                       Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="ED_rhombic_CO" WidthRequest="200" Margin="0, 0, 50, 0"/>
+                    <Image Source="ED_hexagon_CO" WidthRequest="180" Margin="50, 0, 0, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45"
+                             VerticalOptions="EndAndExpand">
+
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="6 / 9" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40"
+                                 HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{204D3EC2-0506-4BE0-A20A-EC4D5D4F0189}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{89a4fe7c-635d-49c9-8d8c-5cd363c0d68d}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>fibrotexusa.ulcans.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>fibrotexusa.ulcans.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FormsVideoLibrary\VideoPicker.cs" />
+    <Compile Include="FormsVideoLibrary\VideoPlayerRenderer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\fibrotexusa.ulcans\fibrotexusa.ulcans.csproj">
+      <Project>{3E9723FE-4756-40E0-AC3A-7FA782EA2595}</Project>
+      <Name>fibrotexusa.ulcans</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Abrams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ATTP_brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Bradley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Burn_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Burger_24x21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Burger_24x21_300dpi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Calculator_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_CamoBasics_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_CamoBasics_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Configuration_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Configuration_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_EqDesc_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_EqDesc_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Home_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Home_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Lacing_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Lacing_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Maintenance_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_Maintenance_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_References_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_References_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_SetUp_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_SetUp_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_TearDown_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_TearDown_240x240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Button_TypicalConfig_120x120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Config_dimensions03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Config_typical_table03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Deploy_TruckNetEntry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_hexagon_CO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_repair_kit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_rhombic_CO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_screen_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_support_pole_CO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_support_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_truck_camo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_Type_I_IDTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ED_Type_II_IDTag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\embedded_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eye_Protection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fire_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HMMET.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Howitzer105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Howitzer155.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i0A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i0B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i1A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i1B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i1C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i7A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i7B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\i10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\JLTV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Lacing05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Lift_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\M1087.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Maintenance_PMCS_Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Maintenance_ScreenRepair01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Maintenance_ScreenRepair02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MRAP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Paladin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\References_Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Setup_Page1_table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\stryker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SupportSystemBag_CO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_about%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_about%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_feed%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_feed%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Trip_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ulcans_overhead_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ulcans_overhead_view_brown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Vapor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fusa_logo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\FoldHex.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\FoldNetAssembly.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\FoldRhombus.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\Lacing 2.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\Lacing.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\PoleDown.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\PoleUp.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\TruckCover.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Videos\TruckUncover.mp4" />
+  </ItemGroup>
+</Project>

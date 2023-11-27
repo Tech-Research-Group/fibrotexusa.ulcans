@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:video="clr-namespace:FormsVideoLibrary"
+             ios:Page.UseSafeArea="true"             
+             x:Class="fibrotexusa.ulcans.Views.Procedures.Erect.BecketLacingPage"
+             NavigationPage.HasBackButton="False"
+             Title="ERECT">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+
+                <Label Text="NET ASSEMBLY PREPARATION" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0" TextColor="Black"/>
+
+                <video:VideoPlayer AutoPlay="True" HeightRequest="250" AreTransportControlsEnabled="True"
+                               CompressedLayout.IsHeadless="False">
+                    <video:VideoPlayer.Source>
+                        <video:ResourceVideoSource>
+                            <video:ResourceVideoSource.Path>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Videos/Lacing.mp4"/>
+                                    <On Platform="Android" Value="Lacing.mp4"/>
+                                </OnPlatform>
+                            </video:ResourceVideoSource.Path>
+                        </video:ResourceVideoSource>
+                    </video:VideoPlayer.Source>
+                </video:VideoPlayer>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back"  HeightRequest="40" HorizontalOptions="StartAndExpand"
+                             Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="2 / 6" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                             Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>    

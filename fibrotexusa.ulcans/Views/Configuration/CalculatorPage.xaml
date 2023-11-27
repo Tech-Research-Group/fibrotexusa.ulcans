@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Configuration.CalculatorPage"
+             NavigationPage.HasBackButton="False"
+             Title="CONFIGURATION CALCULATOR">
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="CONFIGURATION CALCULATOR" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0"
+                       TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame BorderColor="Black" HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+                        <Label TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="NOTE: " TextColor="Black" FontAttributes="Bold"/>
+                                        <Span Text="An ULCANS system consists of one hexagon screen and one rhombic screen."
+                                              TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="1.	" TextColor="Black"/>
+                    <Label Text="Measure Height, Width, and Length (in feet or meters). Round up to nearest whole number."
+                           TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2.	" TextColor="Black"/>
+                    <Label Text="Input dimensions below, select Feet or Meters, and press Calculate to view results. Press Clear to reset."
+                           TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="0, 15, 0, 0">
+                    <StackLayout HorizontalOptions="StartAndExpand">
+                        <Label Text="Height" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                        <Entry x:Name="txtHeight" HorizontalOptions="Start" VerticalOptions="Center"
+                           HorizontalTextAlignment="Center" WidthRequest="120" MaxLength="20"
+                           BackgroundColor="White" Keyboard="Numeric" TextColor="Black"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Width" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                        <Entry x:Name="txtWidth" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"
+                           HorizontalTextAlignment="Center" WidthRequest="120" MaxLength="20"
+                           BackgroundColor="White" Keyboard="Numeric" TextColor="Black"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Length" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                        <Entry x:Name="txtLength" HorizontalOptions="End" VerticalOptions="Center"
+                           HorizontalTextAlignment="Center" WidthRequest="120" MaxLength="20"
+                           BackgroundColor="White" Keyboard="Numeric" TextColor="Black"/>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="Unit of Measure" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                        <Picker x:Name="ddmUnit" HorizontalTextAlignment="Center" BackgroundColor="White"
+                                TextColor="Black">
+                            <Picker.Items>
+                                <x:String>Feet</x:String>
+                                <x:String>Meters</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="EndAndExpand">
+                        <Label Text="Calculate" IsVisible="False"/>
+
+                        <Button x:Name="btnCalc" BackgroundColor="Gray" Text="Calculate" TextColor="White"
+                                FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="End"
+                                WidthRequest="100" Clicked="OnCalculateBtn_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="0, 15, 0, 0">
+                    <StackLayout>
+                        <Label Text="Systems Required:" HorizontalTextAlignment="Start" FontAttributes="Bold"
+                               TextColor="Black"/>
+
+                        <Label x:Name="lblResult" HorizontalOptions="Start" VerticalOptions="Center"
+                               TextColor="Black" FontSize="Medium"/>
+                    </StackLayout>
+
+                    <Button x:Name="btnClear" BackgroundColor="Red" Text="Clear" TextColor="White" FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand" VerticalOptions="Center" WidthRequest="100"
+                            Clicked="OnClearBtn_Clicked"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45"
+                         VerticalOptions="EndAndExpand">
+                    <ImageButton Source="Button_TypicalConfig_120x120" HeightRequest="40"
+                                 HorizontalOptions="StartAndExpand" Margin="0, 5" Clicked="OnBackBtn_Clicked"/>
+
+                    <Label Text="" VerticalOptions="Center" />
+
+                    <ImageButton Source="Button_Configuration_240x240" Rotation="180" HeightRequest="40"
+                                 HorizontalOptions="EndAndExpand" Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

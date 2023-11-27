@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage3"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="SYSTEM TYPE - 2" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0"
+                   TextColor="Black" />
+
+                <Label Text="TYPE II" FontAttributes="Bold" FontSize="Medium" Padding="0, 5, 0, 0"
+                   TextColor="Black" />
+
+                <Label Text="Type II (solid color edge band) is radar transparent and used for concealing ground radar equipment."
+                   TextColor="Black" Padding="0, 5, 0, 5"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Image Source="ED_Type_II_IDTag" WidthRequest="300"/>
+                </StackLayout>
+
+                <Label Text="IDENTIFICATION TAG" HorizontalTextAlignment="Center" HorizontalOptions="Center" TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                             Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="3 / 9" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                             Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

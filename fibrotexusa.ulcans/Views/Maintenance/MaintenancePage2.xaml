@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.Maintenance.MaintenancePage2"
+             Title="MAINTENANCE"
+             NavigationPage.HasBackButton="False">
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="REPAIR LARGE TEARS USING REPAIR MATERIAL" FontAttributes="Bold" FontSize="Medium"
+                   Padding="0, 10, 0, 10" TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="1. " TextColor="Black"/>
+                    <Label Text="Remove debris and ragged material from damaged area of screen." TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="2. " TextColor="Black"/>
+                    <Label Text="Select piece of screen material from repair kit of correct type and class." TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame BorderColor="Black" HorizontalOptions="CenterAndExpand" Background="White">
+                        <Label TextColor="Black">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="NOTE: " TextColor="Black" FontAttributes="Bold"/>
+                                        <Span Text="Repair material should be slightly larger than repair area."
+                                              TextColor="Black"/>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="3. " TextColor="Black"/>
+                    <Label Text="Cut repair material to appropriate size." TextColor="Black"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="4. " TextColor="Black"/>
+                    <Label TextColor="Black">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Position repair material over damaged screen. Attach using "/>
+                                    <Span Text="Repair Using Cable Ties" TextColor="Blue" x:Name="repairCableTiesBtn"/>
+                                    <Span Text=" procedure."/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0, 5, 0, 0">
+                    <Image Source="Maintenance_ScreenRepair01" HeightRequest="80"/>
+                    <Image Source="arrow" VerticalOptions="Center" WidthRequest="25" Margin="25, 0"/>
+                    <Image Source="Maintenance_ScreenRepair02" HeightRequest="80"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                             Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="2 / 4" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                             Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

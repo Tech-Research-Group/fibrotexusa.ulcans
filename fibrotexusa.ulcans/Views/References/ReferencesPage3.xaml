@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"             
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.References.ReferencesPage3"
+             NavigationPage.HasBackButton="False"
+             Title="REFERENCES">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15, 0">
+                <Label Text="WARNING SUMMARY" FontAttributes="Bold" FontSize="Medium"
+                    Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <Label Text="The following are general safety precautions and instructions that people must understand and apply during phases of operation of the Ultra Lightweight Camouflage Net Systems (ULCANS) Increment I. Proper adherence to these instructions will ensure personal safety and the protection of property."
+                    TextColor="Black"/>
+
+                <Label Text="WARNING DESCRIPTIONS" FontAttributes="Bold" FontSize="Medium"
+                    Padding="0, 10, 0, 0" TextColor="Black" />
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <Image Source="Burn_warning" HeightRequest="100" Margin="0, 0, 5, 0" />
+
+                    <Label Text="Burn: Personnel are subject to being burned by hot components and exhausts if deployment of the ULCANS is attempted with the equipment's engine running or immediately after the engine is turned off. A cool down period shall be observed prior to ULCANS deployment except in emergency conditions; then wear hand protection and exercise extreme caution when working in area of hot components."
+                        HorizontalOptions="EndAndExpand" TextColor="Black" Margin="0, 0, 5, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <Image Source="Vapor" HeightRequest="100" Margin="0, 0, 5, 0" />
+
+                    <Label Text="Combustion: Combustion by-products of ULCANS can be toxic. Evacuate the area and stay out of the path of smoke if ULCANS systems are exposed to fire. Self-contained breathing apparatus is required when fighting ULCANS fire."
+                        HorizontalOptions="EndAndExpand" TextColor="Black" Margin="0, 0, 5, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <Image Source="Eye_Protection" HeightRequest="100" Margin="0, 0, 5, 0" />
+
+                    <Label Text="Eye Protection: Particles of dirt and debris carried by netting/garnish can be scraped off and fall into the operator's eyes when looking upward during setup and takedown of ULCANS. Eye protection is required during setup and takedown operations of ULCANS."
+                        HorizontalOptions="EndAndExpand" TextColor="Black" Margin="0, 0, 5, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <Image Source="Fire_warning" HeightRequest="100" Margin="0, 0, 5, 0" />
+
+                    <Label Text="Fire: Volatile fuels and vehicle exhaust can create a fire hazard and can cause explosions. These hazards are always present but most prevalent during hot weather. When volatile fuels or vehicle exhaust are present under ULCANS, steps will be undertaken to insure adequate ventilation of the camouflaged area."
+                        HorizontalOptions="EndAndExpand" TextColor="Black" Margin="0, 0, 5, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <Image Source="Lift_warning" HeightRequest="100" Margin="0, 0, 5, 0" />
+
+                    <Label Text="Lift: To prevent personal injury, a minimum of a two-person lift is required for both the ULCANS screen system and the support system storage/transport containers. Components may increase in weight due to trapped or absorbed water. Use additional personnel as needed."
+                        HorizontalOptions="EndAndExpand" TextColor="Black" Margin="0, 0, 5, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+                    <Image Source="Trip_warning" HeightRequest="100" Margin="0, 0, 5, 0" VerticalOptions="Start"/>
+
+                    <Label Text="Trip: ULCANS tent pins may present a trip hazard. Drive tent pins deeply to minimize area protruding above ground. Select an area without tent pins for entry/egress through the screen. Climbing on and around the equipment to deploy ULCANS can pose a fall hazard. Extreme caution shall be observed to avoid slippery or uneven surfaces and other trip hazards. Use handhold when provided and ladders when available."
+                        HorizontalOptions="EndAndExpand" TextColor="Black" Margin="0, 0, 5, 0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                             Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="3 / 3" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black" />
+
+                    <ImageButton Source="Button_Home_240x240" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                             Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

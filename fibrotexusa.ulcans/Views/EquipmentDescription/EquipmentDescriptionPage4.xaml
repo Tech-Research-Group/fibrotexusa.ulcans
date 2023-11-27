@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="fibrotexusa.ulcans.Views.EquipmentDescription.EquipmentDescriptionPage4"
+             NavigationPage.HasBackButton="False"
+             Title="EQUIPMENT DESCRIPTION">
+    <ContentPage.Content>
+        <FlexLayout>
+            <StackLayout Padding="15, 0">
+                <Label Text="SYSTEM CLASS" FontAttributes="Bold" FontSize="Medium" Padding="0, 10, 0, 0"
+                       TextColor="Black"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout>
+                        <Label Text="There are three ULCANS classes, which specify the screen color combination: Class 1 (Light/Dark Woodland), Class 2 (Desert/Urban), and Class 3 (Snow/Alpine)."
+                               Padding="0, 0, 0, 0" TextColor="Black"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid>
+                        <BoxView BackgroundColor="Black"/>
+
+                        <Grid BackgroundColor="GhostWhite" Margin="3" RowSpacing="0" ColumnSpacing="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Table Head -->
+                            <Label Text="Class" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                            <Label Text="Type" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                            <Label Text="Pattern" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold"/>
+                            <Label Text="NSN" Grid.Column="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" BackgroundColor="Gray" FontAttributes="Bold" Padding="0, 5, 0, 5"/>
+
+                            <!-- Row 1 -->
+                            <Label Text="Class 1" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Type I" Grid.Column="1" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Light/Dark Woodland" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="1080-01-677-6912" Grid.Column="3" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                            <!-- Row 2 -->
+                            <Label Text="Class 1" Grid.Column="0" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Type II" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Light/Dark Woodland" Grid.Column="2" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="1080-01-677-6918" Grid.Column="3" Grid.Row="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                            <!-- Row 3 -->
+                            <Label Text="Class 2" Grid.Column="0" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Type I" Grid.Column="1" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Desert/Urban" Grid.Column="2" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="1080-01-682-4997" Grid.Column="3" Grid.Row="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                            <!-- Row 4 -->
+                            <Label Text="Class 2" Grid.Column="0" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Type II" Grid.Column="1" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Desert/Urban" Grid.Column="2" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="1080-01-682-5467" Grid.Column="3" Grid.Row="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                            <!-- Row 5 -->
+                            <Label Text="Class 3" Grid.Column="0" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Type I" Grid.Column="1" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Snow/Alpine" Grid.Column="2" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="1080-01-682-5481" Grid.Column="3" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+
+                            <!-- Row 6 -->
+                            <Label Text="Class 3" Grid.Column="0" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Type II" Grid.Column="1" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="Snow/Alpine" Grid.Column="2" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                            <Label Text="1080-01-682-5498" Grid.Column="3" Grid.Row="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black"/>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HeightRequest="45" VerticalOptions="EndAndExpand">
+                    <ImageButton Source="arrow_back" HeightRequest="40" HorizontalOptions="StartAndExpand"
+                                 Margin="0, 5" Clicked="OnBackBtnClicked"/>
+
+                    <Label Text="4 / 9" VerticalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+
+                    <ImageButton Source="arrow_back" Rotation="180" HeightRequest="40" HorizontalOptions="EndAndExpand"
+                                 Margin="0, 5" Clicked="OnNextBtnClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>
+
